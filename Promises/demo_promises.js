@@ -35,6 +35,8 @@ function uploaddata(file,url){
 }
 
 
+//consuming a promise
+
 let fetchpromise = fetchdata("www.google.com");
 fetchpromise.then(function processfetch(value) {
     let writepromise = writedata(value);
